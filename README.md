@@ -1,23 +1,25 @@
 # Frontend Mentor - Huddle landing page with single introductory section solution
 
+![](.reference/preview.jpg)
+
 This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [Frontend Mentor - Huddle landing page with single introductory section solution](#frontend-mentor---huddle-landing-page-with-single-introductory-section-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+    - [AI Collaboration](#ai-collaboration)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -30,93 +32,77 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<details>
+  <summary>Mobile view</summary>
+  <img src='screenshots/mobile-view.png' alt='Huddle landing page with single introductory section challenge - Mobile view' width='375px'>
+</details>
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+<details>
+  <summary>Desktop view</summary>
+  <img src='screenshots/desktop-view.png' alt='Huddle landing page with single introductory section challenge - Desktop view'>
+</details>
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<details>
+  <summary>Active state view</summary>
+  <img src='screenshots/active-state-view.png' alt='Huddle landing page with single introductory section challenge - Active state view'>
+</details>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Huddle Landing Page with React, BEM CSS, and Accessibility Focus](https://www.frontendmentor.io/solutions/huddle-landing-page-with-react-bem-css-and-accessibility-focus-T6caaru21w)
+- Live Site URL: [Frontend Mentor | Huddle landing page with single introductory section](https://challenged-by-frontend-mentor.github.io/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Flexbox & CSS Grid
+- BEM (Block Element Modifier) methodology
+- CSS Custom Properties (Variables)
+- [React](https://react.dev/) - JS Library
+- [Vite](https://vitejs.dev/) - Frontend Tooling
+- [React Icons](https://react-icons.github.io/react-icons/) - Icon library (`react-icons/fa`)
+- Accessibility (a11y) standards (WCAG guidelines, semantic tags, ARIA attributes)
+- SEO & Performance Optimizations (Font preloading, preconnect, metadata)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Even though this was a refactoring and re-implementation effort, revisiting a layout like this always brings valuable insights and reinforces core principles:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- **Refining Accessibility (a11y):** Ensuring that interactive elements, especially social media icons wrapped in circular borders, maintain clean click targets while providing clear visual focus indicators using `:focus-visible` and meaningful `aria-label`s without redundant screen reader output.
+- **Architectural Cleanliness with BEM:** Deepening strict adherence to BEM naming conventions within React component structures, keeping component styles modular, predictable, and scoped logically.
+- **Performance & Font Optimization:** Fine-tuning critical assets by utilizing `preconnect` for Google Fonts, loading only necessary font weights (`400` and `600`), and optimizing HTML metadata to elevate SEO and Lighthouse performance scores.
+- **Pixel-Accurate Precision:** Combining design overlay references with native inspection tools to verify alignment, proportions, and responsive typography scalings seamlessly between mobile and desktop viewports.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I want to continue refining and expanding on these areas:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- **Advanced CSS Architecture & Tokenization:** Transitioning toward structured Design Tokens for color systems, fluid typography (`clamp()`), and layout spacing for even higher scalability.
+- **Micro-interactions & Smooth Motion:** Integrating micro-animations (e.g., subtle hover scale transitions or entry animations using Framer Motion or pure CSS) to make single-section landing pages feel even more dynamic.
+- **Automated Accessibility Testing:** Incorporating automated a11y testing tools like `@axe-core/react` or Lighthouse CI into the development pipeline to catch accessibility regressions early.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Web Docs - Accessibility & Semantics](https://developer.mozilla.org/) - An indispensable reference for proper ARIA roles, accessible navigation patterns, and semantic HTML elements.
+- [Modern CSS Reset by Andy Bell](https://piccalil.li/blog/a-more-modern-css-reset/) - Great guidelines for establishing consistent cross-browser baseline styles.
+- [Google Fonts Documentation](https://fonts.google.com/) - Essential guide for optimizing web font delivery with `preconnect` and specific font-weight subsets.
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+This project was built in collaboration with AI assistance using **Gemini** and **Google Search AI Mode**. They served as interactive code reviewers, aiding in verifying WCAG accessibility compliance, double-checking cross-browser CSS rules, and fine-tuning BEM naming conventions during refactoring.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub: [Kairung Vangmanaw](https://github.com/VangmanawKairung)
+- Frontend Mentor - [@VangmanawKairung](https://www.frontendmentor.io/profile/VangmanawKairung)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I would like to express my sincere gratitude to myself for the persistence to rebuild, continuously improve, and strive for pixel-perfect execution, as well as to my family for their unwavering support. 
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Special thanks to the Frontend Mentor team for providing such well-structured design challenges that keep pushing frontend skills forward. 
+
+I am also deeply thankful for the modern toolchain that made this workflow smooth and efficient—including AI assistants like Gemini, Visual Studio Code along with its rich extension ecosystem, Google Chrome DevTools, and even simple utility applications like the built-in Preview app on macOS, which allowed me to quickly measure precise pixel values and accelerate the development cycle.
