@@ -1,17 +1,29 @@
 import "./App.css";
 import Hero from "./components/Hero";
-import Contact from "./components/Contact";
+import SocialLinks from "./components/SocialLinks";
 import Footer from "./components/Footer";
 import Logo from "./assets/logo.svg";
+
+import desktopDesign from "../.reference/design/desktop-design.jpg";
+import mobileDesign from "../.reference/design/mobile-design.jpg";
 
 function App() {
   return (
     <>
-      <div className="page-content">
-        <img src={Logo} alt="Huddle logo" className="page-content__logo" />
-        <main className="main-content">
+      <picture id="design-overlay">
+        <source media="(min-width: 1025px)" srcSet={desktopDesign} />
+        <img src={mobileDesign} alt="Design reference" />
+      </picture>
+
+      <div className="page-wrapper">
+        <header className="header">
+          <a href="/" className="header__logo-link" aria-label="Huddle Home">
+            <img src={Logo} alt="" className="header__logo" />
+          </a>
+        </header>
+        <main id="main-content" className="main-content">
           <Hero />
-          <Contact />
+          <SocialLinks />
         </main>
       </div>
       <Footer />
