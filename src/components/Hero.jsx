@@ -2,14 +2,20 @@ import CoverImage from "../assets/illustration-mockups.svg";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <img src={CoverImage} alt="" className="hero__cover" aria-hidden="true" />
+    <section className="hero" aria-labelledby="hero-heading">
+      <div className="hero__illustration">
+        <img
+          src={CoverImage}
+          alt="Illustration showing community interaction mockups on desktop and mobile screens"
+          className="hero__cover"
+        />
+      </div>
       <div className="hero__content">
-        <h1 className="hero__title">Build The Community </h1>
+        <h1 id="hero-heading" className="hero__title">Build The Community Your Fans Will Love</h1>
         <p className="hero__description">
-          Your Fans Will Love Huddle re-imagines the way we build communities.
-          You have a voice, but so does your audience. Create connections with
-          your users as you engage in genuine discussion.
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
         </p>
         <button type="button" className="hero__cta-btn">
           Register
